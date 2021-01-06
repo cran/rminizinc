@@ -1,4 +1,4 @@
-AC_INIT([rminizinc], [0.0.2])
+AC_INIT([rminizinc], [0.0.3])
 
 # Find the compiler and compiler flags used by R.
 : ${R_HOME=`R RHOME`}
@@ -49,15 +49,16 @@ AC_ARG_WITH(
 					MZN_HEADER_PATH="${with_mzn}/include/minizinc"
 					MZN_LIBS="-L${with_mzn} -lmzn"
 					MZN_LIB_PATH="${with_mzn}/libmzn.a"
-					AC_CHECK_HEADER("${MZN_HEADER_PATH}/ast.hh",
- 						[AC_SUBST([MZN_PATH], 50)], [AC_MSG_NOTICE([header file ast.hh not found at custom path!])])
+
 					file=${with_mzn}/libmzn.a
 				
 					if [test -e "$file" ]; then
-							AC_SUBST([LIB_PATH], "${with_mzn}/libmzn.a")
-					else 
-  							AC_MSG_NOTICE([libmzn.a not found at custom path!])
-					fi 
+                        AC_SUBST([LIB_PATH], "${with_mzn}/libmzn.a")
+                        AC_CHECK_HEADER("${MZN_HEADER_PATH}/ast.hh",
+                        [AC_SUBST([MZN_PATH], 50)], [AC_MSG_NOTICE([header file ast.hh not found at custom path!])])
+                    else 
+                        AC_MSG_NOTICE([libmzn.a not found at custom path!])
+                    fi 
 
             	],
             	[
@@ -67,16 +68,13 @@ AC_ARG_WITH(
 					MZN_LIBS="-L${with_mzn} -lmzn"
 					MZN_LIB_PATH="${with_mzn}/libmzn.a"
 					
-					AC_CHECK_HEADER("${MZN_HEADER_PATH}/ast.hh",
- 						[AC_SUBST([MZN_PATH], 50)], [AC_MSG_NOTICE([header file ast.hh not found at custom path!])])
-
-					file=${with_mzn}/libmzn.a
-					
 					if [test -e "$file" ]; then
-    					AC_SUBST([LIB_PATH], "${with_mzn}/libmzn.a")
-					else 
-    					AC_MSG_NOTICE([libmzn.a not found at custom path!])
-					fi
+                        AC_SUBST([LIB_PATH], "${with_mzn}/libmzn.a")
+                        AC_CHECK_HEADER("${MZN_HEADER_PATH}/ast.hh",
+                        [AC_SUBST([MZN_PATH], 50)], [AC_MSG_NOTICE([header file ast.hh not found at custom path!])])
+                    else 
+                        AC_MSG_NOTICE([libmzn.a not found at custom path!])
+                    fi 
             	]
             )],
             [
@@ -133,7 +131,7 @@ AC_ARG_WITH(
                     AC_SUBST([SLV_BIN], 50)        
                 ],
                 [
-                    AC_MSG_NOTICE([Solver binaries are present but libminizinc is not present!])
+                    AC_MSG_NOTICE([Solver binaries are present but libminizinc is not present or built!])
                 ] )
         	
         	AC_CONFIG_FILES([inst/minizinc/solvers/gecode.msc])
@@ -155,10 +153,7 @@ AS_IF([test "${MZN_PATH}" != 50],
                 MZN_LIBS=""
 			])
 
-AS_IF([test "${LIB_PATH}" = ""],
-			[
-                MZN_LIBS=""
-			])
+
 
 CPP_FLAGS="${CPP_FLAGS} ${MZN_INCLUDE}"
 CXX_FLAGS="${CXX_FLAGS} ${MZN_INCLUDE}"
