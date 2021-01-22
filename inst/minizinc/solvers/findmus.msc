@@ -1,7 +1,7 @@
 {
   "id": "org.minizinc.findmus",
   "name": "findMUS",
-  "executable": "/home/akshit/Documents/GSOC/bin//findMUS",
+  "executable": "/home/akshit/Documents/PROJECTS/GSOC/bin/findMUS",
   "isGUIApplication": false,
   "mznlib": "",
   "supportsMzn": true,

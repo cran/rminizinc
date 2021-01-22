@@ -1,7 +1,7 @@
 Package: rminizinc
 Type: Package
 Title: R Interface to Use 'MiniZinc'
-Version: 0.0.3
+Version: 0.0.4
 Author: Akshit Achara, Lars Kotthoff, Hans W. Borchers, Guido Tack
 Maintainer: Akshit Achara <acharaakshit@gmail.com>
 URL: https://github.com/acharaakshit/RMiniZinc
@@ -26,6 +26,6 @@ SystemRequirements: pandoc (>=1.14, needed for the vignette)
 VignetteBuilder: knitr
 Biarch: true
 NeedsCompilation: yes
-Packaged: 2021-01-04 21:08:11 UTC; akshit
+Packaged: 2021-01-22 12:13:26 UTC; akshit
 Repository: CRAN
-Date/Publication: 2021-01-06 04:40:02 UTC
+Date/Publication: 2021-01-22 12:40:02 UTC

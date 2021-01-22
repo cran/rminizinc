@@ -4,7 +4,7 @@
   "description": "Chuffed FlatZinc executable",
   "version": "0.10.4",
   "mznlib": "../chuffed",
-  "executable": "/home/akshit/Documents/GSOC/bin//fzn-chuffed",
+  "executable": "/home/akshit/Documents/PROJECTS/GSOC/bin/fzn-chuffed",
   "tags": ["cp","lcg","int"],
   "stdFlags": ["-a","-f","-n","-r","-s","-v","--cp-profiler"],
   "extraFlags": [
