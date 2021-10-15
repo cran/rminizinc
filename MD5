@@ -1,4 +1,4 @@
-a4c9010d6da7e1aefe6d46aec6053548 *DESCRIPTION
+12b6e09c7b02a60ec809ceabedf2078d *DESCRIPTION
 10f539a212ae363f3d5965694b97d5cc *NAMESPACE
 d864be7291df723830217cb32b4f5701 *NEWS.md
 7e8dcabccca3d85ed5a18b1ed23b37b9 *R/AssignItem.R
@@ -22,15 +22,15 @@ cd3254951998667025c7348f5c49fd71 *R/get_missing_pars.R
 aa58efeb5a5c8cfd3ff75f4d091101ad *R/set_params.R
 62bc22aefc115fffa846c4bbaf645c64 *R/utils.R
 0171ac03f82e9e62cbada53ec5ebfb22 *R/zzz.R
-887a427ddab91f65ccf7b43e1e18b717 *build/vignette.rds
+2031e28cde75ef70a3c721b2a48773ae *build/vignette.rds
 450b3533fe15f11106276b78bdac90cc *cleanup
 0d628d9c2326fa6327ee8942eb9fb96b *cleanup.win
-f643fa8bfda4a59311619e1676a0907b *configure
-48f00ac052ae2bb16cda4b75d63fdf17 *configure.ac
-fcedd75b9c45ca86631ac5467a120e63 *configure.win
-059f3b5ec0b97e6b4203071c147a9793 *data/config.RData
-1cdb5e64ce570acc57b6a821a4cf1390 *data/proot.RData
-02cc4eb5c0e277f40b27df472eb266e9 *data/slvbin.RData
+7318f7698a1a2ee5120896d1acaeb5f0 *configure
+7ac93e18e4bcdd51b0baf6d97c614d1d *configure.ac
+597a3a45849e0d6a3407db7214588358 *configure.win
+d1ce3c66967146146f67adcb99453751 *data/config.RData
+53ed75bc70adc4320d8254d849473a70 *data/proot.RData
+4d0053f0a2b0fddfa688e900b70af4fe *data/slvbin.RData
 373acf4d2d84a4703199b03b88bdc5fa *inst/doc/R_MiniZinc.R
 f97b987738afbaa760fa6d3e35fd8a7a *inst/doc/R_MiniZinc.Rmd
 19975ea69bf26638f3bca8925f8679d3 *inst/doc/R_MiniZinc.html
@@ -897,7 +897,7 @@ f23b24fd561955a479e5eddffc696cef *man/set_params.Rd
 2e76ea4c9b261546fabcd0a20c0fe5d3 *man/stringExpressions.Rd
 8baf17c03e44d862c02e9eeef8c6e3e2 *src/Makevars.in
 646e026fc2502fc1e99bdb4c989b1cc8 *src/Makevars.win.in
-942d92ea80d8547ef369c2327e83f1f0 *src/RcppExports.cpp
+4f18728d74218d3d6da7e9031862cc64 *src/RcppExports.cpp
 3cebe3bcb7bdba1ef69cd3710dab128e *src/config.h.in
 131d4209a9fb7303ec2a24052bb7aa03 *src/helper_parse.cpp
 018481cd749a928f48faf868a41e90c9 *src/helper_parse.h
